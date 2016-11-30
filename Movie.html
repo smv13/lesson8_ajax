@@ -2,7 +2,7 @@
 <!- - 
 Program Name:   Seminole Movie Connection
 Author: Sydney Vincent
-Date: July 26
+Date: November 28
 Filename:   Movie.html
 - ->
 <head>
@@ -98,19 +98,19 @@ Filename:   Movie.html
                       data: message             
                 })
                 .done(function(json){
-                     $('#Title').html(json.Title);
-                     $('#Rated').html(json.Rated);
-                     $('#Actors').html(json.Actors);
-                     $('#Plot').html(json.Plot);
-                     $('#Released').html(json.Released);
-                     $('#Year').html(json.Year);
-                     $('#Genre').html(json.Genre);
-                     $('#Director').html(json.Director);
-                     $('#Country').html(json.Country);
-                     $('#Language').html(json.Language);
-                     $('#Type').html(json.Type);
-                     $('#Runtime').html(json.Runtime);
-                     $('#Writer').html(json.Writer);
+                     /*global*/('#Title').html(json.Title);"big"
+                     /*global*/('#Rated').html(json.Rated);
+                     /*global*/('#Actors').html(json.Actors);
+                     /*global*/('#Plot').html(json.Plot);
+                     /*global*/('#Released').html(json.Released);
+                     /*global*/('#Year').html(json.Year);
+                     /*global*/('#Genre').html(json.Genre);
+                     /*global*/('#Director').html(json.Director);
+                     /*global*/('#Country').html(json.Country);
+                     /*global*/('#Language').html(json.Language);
+                     /*global*/('#Type').html(json.Type);
+                     /*global*/('#Runtime').html(json.Runtime);
+                     /*global*/('#Writer').html(json.Writer);
                      
                 })
                 .fail(function() {
